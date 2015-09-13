@@ -1,0 +1,180 @@
+  /* start css table stuff */
+.txsTable {
+width: 900px; 
+padding: 20px;
+background-color: white; 
+/* outer shadows  */
+ -moz-box-shadow: 1px 1px 10px #ccc;
+ -webkit-box-shadow: 1px 1px 10px #ccc;
+ box-shadow: 1px 1px 10px #ccc;
+/* rounded corners */
+-webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+background: #d1e8f7; /* Old browsers */
+background: -moz-linear-gradient(top,  #d1e8f7 0%, #d8ecfa 12%, #d8ecfa 25%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1e8f7), color-stop(12%,#d8ecfa), color-stop(25%,#d8ecfa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e8f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.ctrlUpper {
+width: 900px; 
+padding: 20px;
+background-color: white; 
+/* outer shadows  */
+ -moz-box-shadow: 1px 1px 10px #ccc;
+ -webkit-box-shadow: 1px 1px 10px #ccc;
+ box-shadow: 1px 1px 10px #ccc;
+/* rounded corners */
+-webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1e8f7+0,d8ecfa+12,d8ecfa+25,ffffff+100 */
+background: #d1e8f7; /* Old browsers */
+background: -moz-linear-gradient(top,  #d1e8f7 0%, #d8ecfa 12%, #d8ecfa 25%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1e8f7), color-stop(12%,#d8ecfa), color-stop(25%,#d8ecfa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e8f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.ctrlBottom {
+width: 900px; 
+padding: 20px;
+background-color: white; 
+/* outer shadows  */
+ -moz-box-shadow: 1px 1px 10px #ccc;
+ -webkit-box-shadow: 1px 1px 10px #ccc;
+ box-shadow: 1px 1px 10px #ccc;
+/* rounded corners */
+-webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+/* Gradients */
+background: #d1e8f7; /* Old browsers */
+background: -moz-linear-gradient(top,  #d1e8f7 0%, #d8ecfa 12%, #d8ecfa 25%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1e8f7), color-stop(12%,#d8ecfa), color-stop(25%,#d8ecfa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d1e8f7 0%,#d8ecfa 12%,#d8ecfa 25%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e8f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+.row {
+  display: table-row; 
+  border: solid 0px black;
+}
+
+.cell {
+  display: table-cell;
+   text-align: center;
+  border: solid 0px black;
+}
+
+.cell1 {
+  display: table-cell;
+  width: 30%;
+  text-align: center;
+  border: solid 0px black;
+}
+
+.cell-hdr {
+  display: table-cell;
+  text-align: left;
+  border: solid 0px black;
+  font-weight: bold;
+}
+
+.cell-hdr1 {
+  display: table-cell;
+  text-align: center;
+  border: solid 0px black;
+  font-weight: bold;
+}
+.cell-hdr2 {
+  display: table-cell;
+  text-align: left;
+}
+
+.cell-act {
+  display: table-cell;
+  text-align: left;
+  border: solid 0px black;
+}
+
+/* end css table stuff */
+
+.errorMsg {
+    color:red;
+    font-weight: bold;
+}
+
+.successMsg {
+    font-weight: bold;
+    color: #006400;
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.statusLbl {
+  font-weight: bold ;
+}
+
+.investAmt {
+  width:120px;
+  margin-right: 10px;
+
+}
+
+.charles {
+    position:absolute;
+    margin-right:90%;
+    top:35;
+    left:50;
+    width:85px;
+    height:93px;
+}
+
+.pStatus {
+  position:absolute;
+  top:115px;
+}
+.pRefresh {
+  cursor: pointer;
+  position:relative;
+  left:87%;
+  top:-5px;
+}
+.upperPanel{
+  max-width: 910px;
+  margin-top:20px;
+}
+.txt1 {
+    font: 100 16px arial, sans-serif;
+    color: black;
+}
+.connectTbl {
+width: 500px; 
+padding: 20px;
+background-color: white; 
+/* outer shadows  */
+ -moz-box-shadow: 1px 1px 10px #ccc;
+ -webkit-box-shadow: 1px 1px 10px #ccc;
+ box-shadow: 1px 1px 10px #ccc;
+/* rounded corners */
+-webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+/* gradients */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+}
+

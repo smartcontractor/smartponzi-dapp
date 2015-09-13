@@ -1,0 +1,103 @@
+<html>
+<head> 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">    
+<link rel="stylesheet" type="text/css" href="css/dapp-styles.css" media="screen" />
+<link rel="stylesheet" href="css/simple-line-icons.css">
+<link rel="stylesheet" href="css/smartponzi.css">
+</head>
+<body onunload="">
+<!--<header class="dapp-header"></header>
+<div class="dapp-grid"></div>-->
+<div class="dapp-flex-content">
+
+    <!-- aside -->
+    <aside class="dapp-aside">
+        <img class="charles" src="img/charles.png"></img>
+    <nav>
+    <ul>
+        <li>
+            <a href="index.html" class="active">
+                <span class="icon-grid">&nbsp;</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="#">
+                <i class="icon-globe"></i>
+                <span>Network</span>
+            </a>
+             <a href="credits.html">
+                <i class="icon-heart"></i>
+                <span>Credits</span>
+            </a>           
+            <a href="javascript:history.go(-1)"  >
+                <i class="icon-arrow-left"></i>
+                <span>Back</span>
+            </a>
+        </li>  
+    </ul>
+    </nav>
+    </aside>
+
+    <!-- content-->
+    <main class="dapp-content">
+     
+            <div id="isConnected">
+                
+                <h1>Welcome to SmartPonzi</h1>
+                <br />
+                <p>
+                    Connected : <label id="cStatus" class="statusLbl"></label>
+                </p>
+
+                <div class="connectTbl" >
+                    <div class="row">
+                        <span class="cell-hdr2"  width="auto">
+                            Hostname :
+                        </span>  
+                        <span class="cell-hdr" width="auto">
+                            <input id="hostname" type="text" class="dapp-url-bar" value="127.0.0.1"></input>
+                        </span>
+                    </div> 
+                    <div class="row">
+                        <span class="cell-hdr2"  width="auto">
+                            Port :
+                        </span>  
+                        <span class="cell1"  width="auto">
+                            <input id="port" type="text" class="dapp-url-bar" value="8545"></input>
+                        </span>
+                    </div>
+                     <div class="row">
+                        <span class="cell1"  width="auto">
+                           
+                        </span>  
+                        <span class="cell1"  width="auto">
+                          <input type="button" class="dapp-cool-button" style="width:100%" value="Connect" onClick="onClickConnect(document.getElementById('hostname').value, document.getElementById('port').value );">     
+                        </span>
+
+                    </div>
+                </div>
+ 
+
+            </div>
+
+    </main>
+
+    <!-- actionbar 
+    <aside class="dapp-actionbar">
+
+    </aside>
+    -->
+</div>
+
+<!-- footer 
+<footer class="dapp-footer">
+
+</footer>-->
+    <script src="js/lib/web3.js"></script>
+    <script src="js/app/connection.js"></script>
+    <script src="js/app/network.js"></script>
+  
+ 
+</body>
+</html>

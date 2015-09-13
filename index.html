@@ -1,0 +1,136 @@
+<html>
+<head> 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">    
+<link rel="stylesheet" type="text/css" href="css/dapp-styles.css" media="screen" />
+<link rel="stylesheet" href="css/simple-line-icons.css">
+<link rel="stylesheet" href="css/smartponzi.css">
+</head>
+<body onunload="">
+<!--<header class="dapp-header">
+
+</header>
+<div class="dapp-grid"></div>-->
+<div class="dapp-flex-content">
+
+    <!-- aside -->
+    <aside class="dapp-aside">
+        <img class="charles" src="img/charles.png"></img>
+    <nav>
+    <ul>
+        <li>
+        	<a href="#" class="active">
+                <span class="icon-grid">&nbsp;</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="network.html">
+                <i class="icon-globe"></i>
+                <span>Network</span>
+            </a>
+             <a href="credits.html">
+                <i class="icon-heart"></i>
+                <span>Credits</span>
+            </a>           
+            <a href="javascript:history.go(-1)"  >
+                <i class="icon-arrow-left"></i>
+                <span>Back</span>
+            </a>
+        </li>    
+    </ul>
+    </nav>
+    </aside>
+
+    <!-- content-->
+    <main class="dapp-content">
+            <div class="upperPanel"  >
+                <h1>Welcome to SmartPonzi</h1>
+                <p class="pStatus">
+                    Connected : <label class="statusLbl" id="cStatus">... loading</label>&nbsp;&nbsp;
+                                <label id="cError" class="errorMsg"></label>&nbsp;&nbsp;
+                                <label id="sSuccess" class="successMsg"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                </p>
+                <label id="copyCtrl" class="pRefresh" onClick="copyToClipboard(__('sSuccess').innerHTML);" >Copy | </label> 
+                <label class="pRefresh" onClick="fetchBalances()">Refresh</label>
+            </div>
+
+        <div class="ctrlUpper" >
+                <label id="cResponse"></label>
+                <br />              
+            <div class="row">
+                <span class="cell1"  width="auto">
+                    &nbsp;&nbsp;&nbsp;
+                </span>  
+                <span class="cell1"  width="auto">
+                    &nbsp;&nbsp;&nbsp;
+                </span>  
+                <span class="cell1"  width="auto">
+                 
+                </span>  
+                <span class="cell1"  width="auto">
+                 
+                </span> 
+                <span class="cell1"  width="auto">
+                 
+                </span> 
+            </div>
+            <div class="row">
+                <span class="cell1"  width="auto">
+                    <input type='button' class="dapp-cool-button"  onclick=getContractAddress(); value="Address"></input>
+                </span>
+                <span class="cell1"  width="auto">
+                   <input type='button' class="dapp-cool-button" onclick=getContractBalance(); value="Total Invested"></input>
+                </span>
+                <span class="cell1"  width="auto">
+                    <input type='button' class="dapp-cool-button" onclick=getContractManager(); value="Manager"></input>
+                </span>
+                <span class="cell1"  width="auto">
+                    <input type='button' class="dapp-cool-button" onclick=getContractRoi(); value="ROI"></input>
+                </span>  
+                <span class="cell1"  width="auto">
+                    <input type='button' class="dapp-cool-button" onclick=getContractDeposits(); value="Total Deposits"></input>
+                </span>                  
+            
+            </div>
+           
+        </div>       
+
+        <br/>
+           
+        <div class="txsTable" id="txs" >
+ 
+
+        </div>              
+        <br />
+
+
+        <div class="ctrlBottom" id="controls" >
+
+
+
+
+        </div>   
+
+
+        </main>
+
+    <!-- actionbar -->
+    <!--<aside class="dapp-actionbar">
+
+    </aside>-->
+
+</div>
+
+<!-- footer 
+<footer class="dapp-footer">
+
+</footer>-->
+    <script src="js/lib/web3.js"></script>
+    <script src="js/app/connection.js"></script>
+    <script src="js/app/index.js"></script>
+
+    </script>
+ 
+</body>
+</html>
