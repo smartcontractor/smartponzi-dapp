@@ -294,8 +294,7 @@ var reCalculateProfits = function() {
 
 
 var fetchBalances = function() {
-
-    __("txs").innerHTML = null;
+   if (isConnected){
 
     var tblHeader = '<div class="row">' +
         '<span class="cell-hdr"  width="55%">' +
@@ -370,6 +369,11 @@ var fetchBalances = function() {
 
         }
     }
+
+    
+   }
+    __("txs").innerHTML = null;
+
 
 };
 
