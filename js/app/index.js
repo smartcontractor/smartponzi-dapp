@@ -294,7 +294,8 @@ var reCalculateProfits = function() {
 
 
 var fetchBalances = function() {
-   if (isConnected){
+
+    __("txs").innerHTML = null;
 
     var tblHeader = '<div class="row">' +
         '<span class="cell-hdr"  width="55%">' +
@@ -369,11 +370,6 @@ var fetchBalances = function() {
 
         }
     }
-
-    
-   }
-    __("txs").innerHTML = null;
-
 
 };
 
@@ -465,7 +461,7 @@ var getData = function(account, i) {
 
         if (parseInt(elapsed) > 140000000) {
             elapsed = "--";
-        } else {
+        }else{
             elapsed = (elapsed / 86400).toFixed(6)
         }
         __("e" + i).innerHTML = elapsed;
