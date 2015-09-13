@@ -216,11 +216,12 @@ window.onload = function() {
             ponziManager = ponzi.manager();
             ponziRoi = ponzi.roi();
             ponziDeposits = ponzi.numDeposits();
+            fetchBalances();
+            generateControls();
         });
     }
 
-    fetchBalances();
-    generateControls();
+
 };
 
 var invest = function(amount) {
@@ -297,6 +298,7 @@ var fetchBalances = function() {
 
     __("txs").innerHTML = null;
 
+    if (isConnected){
     var tblHeader = '<div class="row">' +
         '<span class="cell-hdr"  width="55%">' +
         'Account' +
@@ -370,6 +372,10 @@ var fetchBalances = function() {
 
         }
     }
+
+
+    }
+
 
 };
 

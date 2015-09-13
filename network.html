@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="css/smartponzi.css">
 </head>
 <body onunload="">
-<!--<header class="dapp-header"></header>-->
-<div class="dapp-grid"></div>
+<!--<header class="dapp-header"></header>
+<div class="dapp-grid"></div>-->
 <div class="dapp-flex-content">
 
     <!-- aside -->
@@ -46,8 +46,11 @@
                 
                 <h1>Welcome to SmartPonzi</h1>
                 <br />
-                <p>
-                    Connected : <label id="cStatus" class="statusLbl"></label>
+                <p class="pStatus1">
+                    Connected : <label class="statusLbl" id="cStatus">... loading</label>&nbsp;&nbsp;
+                                <label id="cError" class="errorMsg"></label>&nbsp;&nbsp;
+                                <label id="sSuccess" class="successMsg"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                
                 </p>
 
                 <div class="connectTbl" >

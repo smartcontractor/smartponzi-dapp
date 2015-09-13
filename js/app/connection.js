@@ -5,6 +5,7 @@ var connect = function(_hostname, _port) {
 };
 
 var onClickConnect = function(_hostname, _port) {
+    __("cStatus").innerHTML = " ... connecting"
     if (typeof(Storage) !== "undefined") {
         // Code for localStorage/sessionStorage.
         localStorage.setItem("hostname", _hostname);
@@ -16,20 +17,19 @@ var onClickConnect = function(_hostname, _port) {
     web3.setProvider(new web3.providers.HttpProvider('http://' + _hostname + ':' + _port), function(err, result) {});
 };
 
-var deployContract = function(address, abi, cb) {
-    cb(web3.eth.contract(abi).at(address));
-};
-
-
-var checkConnectionOnce = function(cb) {
-    var status = web3.isConnected();
-    cb(status);
-};
 
 var checkConnection = function() {
     var status = web3.isConnected();
     __("cStatus").innerHTML = status;
+    hideElement("cStatus");
 
+};
+
+var hideElement = function(id) {
+    setTimeout(function() {
+        var ele = __(id);
+        ele.innerHTML = "";
+    }, 5000);
 };
 
 var isObjectEmpty = function(obj) {
