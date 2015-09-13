@@ -1,9 +1,6 @@
 
 ###Introducing SmartPonzi, a Ponzi scheme simulator based on Ethereum
 
-
-We are happy to introduce the first digital, and fully transparent Ponzi scheme manager : SmartPonzi 
-
 SmartPonzi is a novel concept for a "financial game/simulation" leveraging the amazing features of Ethereum and smart contracts. 
 If you are new to the term Ponzi scheme here is the [Wikipedia](https://en.wikipedia.org/wiki/Ponzi_scheme) definition :  
 
