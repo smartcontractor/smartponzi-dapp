@@ -13,8 +13,7 @@ Contrarily to a human being, a digital smart contract cannot take arbitrary deci
 
 **So Why SmartPonzi?**
 
-SmartPonzi is game with its own dynamics, you can make money or lose money with it, and more importantly, it should simulate certain financial dynamics and yield very interesting data. The informations obtained in the long run will be used for research purposes and shared publicly.
-
+SmartPonzi is game with its own dynamics, you can make money or lose money with it, and more importantly,  it should simulate the financial dynamics of a real world Ponzi scheme and yield very interesting data. The informations obtained in the long run will be used for research purposes and shared publicly.
 
 
 **How does SmartPonzi work?**
