@@ -32,3 +32,17 @@ At the end of one week, if there is enough balance in the contract, you will be 
 Please note : If you choose the last and more profitable option, you will also have to hit the "Recalculate Profits" button to credit yourself with profits for new week. If you forget it you will miss profits for that specific week.
 
 The longer you stay invested the more profits you will cumulate. If you choose to withdraw your profit at the end of each week, you will not benefit from the effect of "compounding", which means that your profit will grow slower, but your "exposure" will be reduced. Now consider that you are unaware of other "investors" moves, but you can see the contract balance (or if you are an advanced user you can setup a log event to monitor incoming deposits). You have to judge based on this information and choose the best move in order not to lose your money. 
+
+**How to connect**
+
+Clone this repo
+```
+$ git clone https://github.com/smartcontractor/smartponzi-dapp.git
+```
+
+Start a geth node
+
+```
+$ geth --rpc --rpcaddr="localhost" --unlock=primary --rpcport="8080"  console
+```
+
