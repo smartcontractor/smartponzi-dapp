@@ -9,12 +9,13 @@ If you are new to the term Ponzi scheme here is the [Wikipedia](https://en.wikip
 
 **Why is SmartPonzi different ?**
 
-Contrarily to a human being, a digital smart contract cannot take arbitrary decisions and it's programmed to follow specific instructions. 
-SmartPonzi is programmed so that he certainly won't steal your money.  We are publishing the source code which can be audited and matched against the program currently on chain, to ensure full transparency.
+Contrarily to a human being, a digital smart contract cannot take arbitrary decisions and it's programmed to follow specific instructions. SmartPonzi is programmed so that he will still pay new investors from old investors funds, but he certainly won't take your money and run. The scheme will eventually collapse if certain conditions are met but could go on indefinitely as well. We have published the source code which can be audited and matched against the program currently on chain, to ensure full transparency.
 
 **So Why SmartPonzi?**
 
-SmartPonzi is game with its own dynamics, you can make money or lose money with it, and more importantly, it should simulate certain economic dynamics which are very interesting for research purposes.
+SmartPonzi is game with its own dynamics, you can make money or lose money with it, and more importantly, it should simulate certain financial dynamics and yield very interesting data. The informations obtained in the long run will be used for research purposes and shared publicly.
+
+
 
 **How does SmartPonzi work?**
 
