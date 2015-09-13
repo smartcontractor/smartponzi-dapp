@@ -21,7 +21,7 @@ SmartPonzi is game with its own dynamics, you can make money or lose money with 
 
 SmartPonzi will credit its investors a 7% profit on investment, compounded weekly.
 
-Choose your investment size and click on the "Invest" button, your funds will be "locked"  for 1 week. 
+Choose your investment size and click on the "Invest" button, your funds will be locked  for 1 week. 
 
 At the end of one week, if there is enough balance in the contract, you will be able to either :
 
