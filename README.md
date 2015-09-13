@@ -46,3 +46,4 @@ Start a geth node
 $ geth --rpc --rpcaddr="localhost" --unlock=primary --rpcport="8080"  console
 ```
 
+Open index page with your favourite browser, click "Network" and type 127.0.0.1 as hostname and 8080 as port, hit Connect
