@@ -210,8 +210,8 @@ window.onload = function() {
         __("cStatus").innerHTML = result;
     });
 
-    __("upperCtrls").innerHTML = null;
-    
+    __("upperCtrls").style.display = "none";
+
     if (isConnected) {
         deployContract("0x9e48a065af4d02257d9c9c83d78e7c06e7bf2449", abi, function(contract) {
             ponzi = contract;
@@ -321,6 +321,7 @@ var fetchBalances = function() {
         '</div>';
 
     __("txs").innerHTML = tblHeader;
+     __("upperCtrls").style.display = "table-row";
 
     var balance = 0;
     var invested = 0;
