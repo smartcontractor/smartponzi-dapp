@@ -194,13 +194,14 @@ window.onload = function() {
         if (localStorage.getItem("hostname") !== "" && localStorage.getItem("port") !== "") {
             hostname = localStorage.getItem('hostname');
             port = localStorage.getItem('port');
+            // connect to local geth instance 
+            connect(hostname, port, function(result) {});            
         }
     } else {
         // Sorry! No Web Storage support..
         __("cError").innerHTML = "no localStorage support! Please switch to a modern  browser";
     }
-    // connect to local geth instance 
-    connect(hostname, port, function(result) {});
+
 
     // check connection
     checkConnectionOnce(function(result) {
@@ -208,7 +209,9 @@ window.onload = function() {
         isConnected = result;
         __("cStatus").innerHTML = result;
     });
+
     __("upperCtrls").innerHTML = null;
+    
     if (isConnected) {
         deployContract("0x9e48a065af4d02257d9c9c83d78e7c06e7bf2449", abi, function(contract) {
             ponzi = contract;

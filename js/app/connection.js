@@ -2,24 +2,25 @@ var hostname = null;
 var port = null;
 
 var connect = function(_hostname, _port) {
-    if (_hostname !== null && _hostname !== "" && _port !== null && _port !== ""){
+    if (_hostname !== null && _hostname !== "" && _port !== null && _port !== "") {
+        __("sSuccess").innerHTML = " ... connecting";
         web3.setProvider(new web3.providers.HttpProvider('http://' + _hostname + ':' + _port), function(err, result) {});
     }
 };
 
 var onClickConnect = function(_hostname, _port) {
-    __("sSuccess").innerHTML = " ... connecting"
     if (typeof(Storage) !== "undefined") {
         // Code for localStorage/sessionStorage.
         localStorage.setItem("hostname", _hostname);
         localStorage.setItem("port", _port);
         hostname = _hostname;
         port = _port;
+        connect(_hostname,_port);        
     } else {
         // Sorry! No Web Storage support..
         __("cError").innerHTML = "no localStorage support! Please switch to a modern your browser";
     }
-    web3.setProvider(new web3.providers.HttpProvider('http://' + _hostname + ':' + _port), function(err, result) {});
+
 };
 
 
