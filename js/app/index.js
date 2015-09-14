@@ -208,7 +208,7 @@ window.onload = function() {
         isConnected = result;
         __("cStatus").innerHTML = result;
     });
-
+    __("upperCtrls").innerHTML = null;
     if (isConnected) {
         deployContract("0x9e48a065af4d02257d9c9c83d78e7c06e7bf2449", abi, function(contract) {
             ponzi = contract;
@@ -496,6 +496,7 @@ var connect = function(_hostname, _port) {
 };
 
 var generateControls = function() {
+
 
     var iDiv2 = document.createElement('div');
     iDiv2.className = 'row';
