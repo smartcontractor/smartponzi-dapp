@@ -55,4 +55,4 @@ var __ = function(id) {
 };
 
 // check connection every 5 seconds in the background
-setInterval(checkConnection, 5400);
+setInterval(checkConnection, 10000);
