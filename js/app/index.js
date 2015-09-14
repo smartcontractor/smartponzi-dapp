@@ -197,7 +197,7 @@ window.onload = function() {
         }
     } else {
         // Sorry! No Web Storage support..
-        __("cError").innerHTML = "no localStorage support! Please switch to a modern your browser";
+        __("cError").innerHTML = "no localStorage support! Please switch to a modern  browser";
     }
     // connect to local geth instance 
     connect(hostname, port, function(result) {});
