@@ -1,6 +1,8 @@
 
 ###Introducing SmartPonzi, a Ponzi scheme simulator based on Ethereum
 
+[![Join the chat at https://gitter.im/smartcontractor/smartponzi-dapp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/smartcontractor/smartponzi-dapp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 SmartPonzi is a novel concept for a "financial game/simulation" leveraging the amazing features of Ethereum and smart contracts. 
 If you are new to the term Ponzi scheme here is the [Wikipedia](https://en.wikipedia.org/wiki/Ponzi_scheme) definition :  
 
