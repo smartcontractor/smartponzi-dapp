@@ -1,182 +1,8 @@
-/* ABI DEFINITION */
-var abi = [{
-    "constant": false,
-    "inputs": [],
-    "name": "reCalc",
-    "outputs": [],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "getBalance",
-    "outputs": [{
-        "name": "balance",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [{
-        "name": "",
-        "type": "address"
-    }],
-    "name": "balances",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": false,
-    "inputs": [],
-    "name": "withdraw",
-    "outputs": [],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "manager",
-    "outputs": [{
-        "name": "",
-        "type": "address"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "roi",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "getProfit",
-    "outputs": [{
-        "name": "profit",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "getCumulativeProfit",
-    "outputs": [{
-        "name": "profit",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "getDepositDelta",
-    "outputs": [{
-        "name": "depositDelta",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": false,
-    "inputs": [],
-    "name": "withdrawProfit",
-    "outputs": [],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "feeRate",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "numDeposits",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [{
-        "name": "",
-        "type": "address"
-    }],
-    "name": "instantProfits",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": false,
-    "inputs": [],
-    "name": "deposit",
-    "outputs": [],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "minDiff",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [],
-    "name": "lastDepositTs",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "name": "addresses",
-    "outputs": [{
-        "name": "",
-        "type": "address"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [{
-        "name": "",
-        "type": "address"
-    }],
-    "name": "cumulativeProfits",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "constant": true,
-    "inputs": [{
-        "name": "",
-        "type": "address"
-    }],
-    "name": "deposits",
-    "outputs": [{
-        "name": "",
-        "type": "uint256"
-    }],
-    "type": "function"
-}, {
-    "inputs": [],
-    "type": "constructor"
-}];
+/** 
+
+SmartPonzi 2015 
+
+*/
 
 var balances = [];
 var ponzi = null;
@@ -228,7 +54,7 @@ window.onload = function() {
 };
 
 var invest = function(amount) {
-    var e = document.getElementById("accountsDropdown");
+    var e = __("accountsDropdown");
     var account = e.options[e.selectedIndex].value;
     ponzi.deposit.sendTransaction({
         from: account,
@@ -246,7 +72,7 @@ var invest = function(amount) {
 };
 
 var withdraw = function() {
-    var e = document.getElementById("accountsDropdown");
+    var e = __("accountsDropdown");
     var account = e.options[e.selectedIndex].value;
     ponzi.withdraw(account, {
         from: account,
@@ -263,7 +89,7 @@ var withdraw = function() {
 };
 
 var withdrawProfit = function() {
-    var e = document.getElementById("accountsDropdown");
+    var e = __("accountsDropdown");
     var account = e.options[e.selectedIndex].value;
     ponzi.withdrawProfit(account, {
         from: account,
@@ -280,7 +106,7 @@ var withdrawProfit = function() {
 };
 
 var reCalculateProfits = function() {
-    var e = document.getElementById("accountsDropdown");
+    var e = __("accountsDropdown");
     var account = e.options[e.selectedIndex].value;
     ponzi.reCalc(account, {
         from: account,
@@ -513,7 +339,7 @@ var generateControls = function() {
 
     var span3 = document.createElement('span');
     span3.className = 'cell1';
-    span3.innerHTML = '<input type="button" onclick=invest(document.getElementById("iA").value); class="dapp-cool-button" value="Invest"></input>';
+    span3.innerHTML = '<input type="button" onclick=invest(__("iA").value); class="dapp-cool-button" value="Invest"></input>';
     iDiv2.appendChild(span3);
 
     var span4 = document.createElement('span');
